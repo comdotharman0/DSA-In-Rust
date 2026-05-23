@@ -1,6 +1,6 @@
 mod fibonacci;
 mod sortings;
-use sortings::bubble_sort;
+use sortings::sortings_main;
 fn experiment() {
     let mut a: [usize; 4] = [9, 1, 3, 6];
     println!("{:#?}", a);
@@ -8,7 +8,7 @@ fn experiment() {
     println!("{:#?}", a);
 }
 fn main() {
-    bubble_sort();
+    sortings_main();
     //experiment();
     //let fibo = fibonacci::Fibonacci::new();
     //fibo.loops(18);

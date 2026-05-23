@@ -94,7 +94,8 @@ impl BubbleSort {
         if j < N - 1 {
             if i < N - j - 1 {
                 if a[i] > a[i + 1] {
-                    (a[i + 1], a[i]) = (a[i], a[i + 1]);
+                    
+(a[i + 1], a[i]) = (a[i], a[i + 1]);
                 }
 
                 a = Self::recursions(a, i + 1, j);
@@ -103,7 +104,6 @@ impl BubbleSort {
                 i = 0;
                 a = Self::recursions(a, i, j);
             }
-        } else {
         }
         a
     }
