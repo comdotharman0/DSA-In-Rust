@@ -3,11 +3,15 @@ mod selection_sort;
 mod insertion_sort;
 mod quick_sort;
 mod counting_sort;
+mod radix_sort;
+mod merge_sort;
 use bubble_sort::BubbleSort;
 use selection_sort::SelectionSort;
 use insertion_sort::InsertionSort;
 use quick_sort::QuickSort;
 use counting_sort::CountingSort;
+use radix_sort::RadixSort;
+use merge_sort::MergeSort;
 pub fn bubble_sort() {
  println!("Bubble Sort");   
 let bsl = BubbleSort::loops(
@@ -80,11 +84,27 @@ let bsl = CountingSort::counting_sort(
 vec![10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]);
 println!("Simple {:?}",bsl);
 }
+
+pub fn radix_sort() {
+println!("Radix Sort");
+let bsl = RadixSort::radix_sort(
+vec![10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]);
+println!("Simple {:?}",bsl);
+}
+
+pub fn merge_sort() {
+println!("Merge Sort");
+let bsl = MergeSort::merge_sort(
+vec![10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]);
+println!("Simple {:?}",bsl);
+}
+
 pub fn sortings_main(){
 bubble_sort();
 selection_sort();
 insertion_sort();
 quick_sort();
 counting_sort();
-
+radix_sort();
+merge_sort();
 }
