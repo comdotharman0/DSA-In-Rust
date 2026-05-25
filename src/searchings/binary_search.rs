@@ -24,7 +24,7 @@ return None;
 }
 left = mid + 1;
 }
-//println!("Index = {}",index);
+println!("Index = {}",mid);
 }
 
 result
